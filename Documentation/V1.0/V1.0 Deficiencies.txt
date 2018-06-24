@@ -1,0 +1,4 @@
+XMICRO-Memory
+	ROM pad holes are not large enough for a ZIF socket. Seem to have been rounded down to the same size as the other DIPs.
+	Aesthetic: BT1 should be centered on U7.
+	On future revisions, consider making the CF card capable of DMA - Interleave the RAM chips?

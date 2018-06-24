@@ -1,0 +1,688 @@
+Netlist
+
+Exported from XMICRO-MEMORY.sch at 1/14/2018 9:48:52 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+!BCSX    CE0      9        !CSX       1
+         U13      17       A4         1
+
+!BRD     CE0      21       !RD        1
+         U13      4        A2         1
+
+!BWR     CE0      22       !WR        1
+         U13      6        A3         1
+
+!CESB!IN JP6      1        1          2
+         U4       26       !CEIN      5
+         U7       12       O          2
+
+!CESB!OUT JP6      3        3          2
+         U4       25       !CEOUT     5
+
+!CF_CD1  CF1      26       !CD1       4
+         R6       2        2          6
+         U9       4        A2         6
+
+!CF_CD2  CF1      25       !CD2       4
+         R5       2        2          6
+         U9       15       A3         6
+
+!CINH    CE0      13       !CINH      1
+         U7       13       I2         2
+         U7       5        I2         2
+         U8       1        I          3
+         U8       13       I          1
+
+!CSX     U11      4        G2A        6
+         U12      4        G2A        6
+         U13      3        Y4         1
+         U6       2        I1         1
+
+!CS_CF   CF1      7        !CS0       4
+         U11      15       Y0         6
+
+!CS_ID   U10      1        G          6
+         U10      19       G          6
+         U12      7        Y7         6
+
+!CS_RTC  U11      14       Y1         6
+         U4       21       !CS        5
+
+!CS_SR   U12      11       Y4         6
+         U9       1        G          6
+         U9       19       G          6
+
+!INT_RTC JP3      1        1          7
+         U4       5        !INT       5
+
+!IRQX    CE0      52       !IRQX      1
+         U8       8        O          7
+
+!RD      CF1      34       !IORD      4
+         U1       22       !OE        3
+         U12      5        G2B        6
+         U13      16       Y2         1
+         U16      1        DIR        1
+         U2       24       !OE        2
+         U3       24       !OE        2
+         U4       22       !OE        5
+
+!RST     CE0      14       !RST       1
+         CF1      41       /RESET     4
+         JP2      2        2          5
+
+!SR_CF   U7       11       I2         7
+         U8       4        O          7
+         U9       2        A1         6
+
+!SR_RTC  JP3      2        2          7
+         R4       1        1          7
+         U7       10       I1         7
+         U9       17       A4         6
+
+!U1CS    JP6      2        2          2
+         U2       22       !CE        2
+
+!U2CS    U3       22       !CE        2
+         U7       6        O          2
+
+!U3CS    R3       2        2          3
+         U1       20       !CE        3
+         U5       19       P=Q        3
+         U7       2        I1         2
+         U7       4        I1         2
+
+!WAIT    CE0      18       !WAIT      1
+         JP4      1        1          4
+
+!WR      CF1      35       !IOWR      4
+         U13      14       Y3         1
+         U2       29       !WE        2
+         U3       29       !WE        2
+         U4       27       !WE        5
+
++5VSB    CE0      8        +5VSB      1
+         JP14     1        1          5
+
+A0       CF1      20       A00        4
+         JP1      1        1          5
+         U1       10       A0         3
+         U12      1        A          6
+         U13      5        Y3         1
+         U2       12       A0         2
+         U3       12       A0         2
+         U4       10       A0         5
+
+A1       CF1      19       A01        4
+         U1       9        A1         3
+         U13      7        Y2         1
+         U2       11       A1         2
+         U3       11       A1         2
+         U4       9        A1         5
+
+A2       CF1      18       A02        4
+         U1       8        A2         3
+         U13      12       Y4         1
+         U2       10       A2         2
+         U3       10       A2         2
+         U4       8        A2         5
+
+A3       U1       7        A3         3
+         U13      9        Y1         1
+         U2       9        A3         2
+         U3       9        A3         2
+         U4       7        A3         5
+
+A4       U1       6        A4         3
+         U11      1        A          6
+         U14      18       Y1         1
+         U2       8        A4         2
+         U3       8        A4         2
+
+A5       U1       5        A5         3
+         U11      2        B          6
+         U12      2        B          6
+         U14      3        Y4         1
+         U2       7        A5         2
+         U3       7        A5         2
+
+A6       U1       4        A6         3
+         U11      3        C          6
+         U12      3        C          6
+         U14      16       Y2         1
+         U2       6        A6         2
+         U3       6        A6         2
+
+A7       U1       3        A7         3
+         U11      5        G2B        6
+         U12      6        G1         6
+         U14      5        Y3         1
+         U2       5        A7         2
+         U3       5        A7         2
+
+A8       U1       25       A8         3
+         U14      14       Y3         1
+         U2       27       A8         2
+         U3       27       A8         2
+
+A9       U1       24       A9         3
+         U14      7        Y2         1
+         U2       26       A9         2
+         U3       26       A9         2
+
+A10      U1       21       A10        3
+         U14      12       Y4         1
+         U2       23       A10        2
+         U3       23       A10        2
+
+A11      U1       23       A11        3
+         U14      9        Y1         1
+         U2       25       A11        2
+         U3       25       A11        2
+
+A12      JP8      3        3          3
+         JP9      1        1          3
+         U15      18       Y1         1
+         U2       4        A12        2
+         U3       4        A12        2
+
+A13      JP10     3        3          3
+         JP11     1        1          3
+         U15      3        Y4         1
+         U2       28       A13        2
+         U3       28       A13        2
+
+A14      JP12     3        3          3
+         JP13     1        1          3
+         U15      16       Y2         1
+         U2       3        A14        2
+         U3       3        A14        2
+
+A15      U15      5        Y3         1
+         U2       31       A15        2
+         U3       31       A15        2
+         U5       15       P6         3
+
+A16      U15      14       Y3         1
+         U2       2        A16        2
+         U3       2        A16        2
+         U5       6        P2         3
+
+A17      U15      7        Y2         1
+         U2       30       A17        2
+         U3       30       A17        2
+         U5       13       P5         3
+
+A18      U15      12       Y4         1
+         U2       1        A18        2
+         U3       1        A18        2
+         U5       8        P3         3
+
+A19      U15      9        Y1         1
+         U5       11       P4         3
+         U7       3        I0         2
+         U8       5        I          2
+
+BA0      CE0      23       A0         1
+         U13      15       A3         1
+
+BA1      CE0      24       A1         1
+         U13      13       A2         1
+
+BA2      CE0      25       A2         1
+         U13      8        A4         1
+
+BA3      CE0      26       A3         1
+         U13      11       A1         1
+
+BA4      CE0      27       A4         1
+         U14      2        A1         1
+
+BA5      CE0      28       A5         1
+         U14      17       A4         1
+
+BA6      CE0      29       A6         1
+         U14      4        A2         1
+
+BA7      CE0      30       A7         1
+         U14      15       A3         1
+
+BA8      CE0      31       A8         1
+         U14      6        A3         1
+
+BA9      CE0      32       A9         1
+         U14      13       A2         1
+
+BA10     CE0      33       A10        1
+         U14      8        A4         1
+
+BA11     CE0      34       A11        1
+         U14      11       A1         1
+
+BA12     CE0      35       A12        1
+         U15      2        A1         1
+
+BA13     CE0      36       A13        1
+         U15      17       A4         1
+
+BA14     CE0      37       A14        1
+         U15      4        A2         1
+
+BA15     CE0      38       A15        1
+         U15      15       A3         1
+
+BA16     CE0      39       A16        1
+         U15      6        A3         1
+
+BA17     CE0      40       A17        1
+         U15      13       A2         1
+
+BA18     CE0      41       A18        1
+         U15      8        A4         1
+
+BA19     CE0      42       A19        1
+         U15      11       A1         1
+
+D0       CF1      21       D00        4
+         RN2      2        2          1
+         U1       11       D0         3
+         U10      18       Y1         6
+         U16      18       B1         1
+         U2       13       D0         2
+         U3       13       D0         2
+         U4       11       D0         5
+         U9       18       Y1         6
+
+D1       CF1      22       D01        4
+         RN2      3        3          1
+         U1       12       D1         3
+         U10      3        Y4         6
+         U16      17       B2         1
+         U2       14       D1         2
+         U3       14       D1         2
+         U4       12       D1         5
+         U9       3        Y4         6
+
+D2       CF1      23       D02        4
+         RN2      4        4          1
+         U1       13       D2         3
+         U10      16       Y2         6
+         U16      16       B3         1
+         U2       15       D2         2
+         U3       15       D2         2
+         U4       13       D2         5
+         U9       16       Y2         6
+
+D3       CF1      2        D03        4
+         RN2      5        5          1
+         U1       15       D3         3
+         U10      5        Y3         6
+         U16      15       B4         1
+         U2       17       D3         2
+         U3       17       D3         2
+         U4       15       D3         5
+         U9       5        Y3         6
+
+D4       CF1      3        D04        4
+         RN2      6        6          1
+         U1       16       D4         3
+         U10      14       Y3         6
+         U16      14       B5         1
+         U2       18       D4         2
+         U3       18       D4         2
+         U4       16       D4         5
+         U9       14       Y3         6
+
+D5       CF1      4        D05        4
+         RN2      7        7          1
+         U1       17       D5         3
+         U10      7        Y2         6
+         U16      13       B6         1
+         U2       19       D5         2
+         U3       19       D5         2
+         U4       17       D5         5
+         U9       7        Y2         6
+
+D6       CF1      5        D06        4
+         RN2      8        8          1
+         U1       18       D6         3
+         U10      12       Y4         6
+         U16      12       B7         1
+         U2       20       D6         2
+         U3       20       D6         2
+         U4       18       D6         5
+         U9       12       Y4         6
+
+D7       CF1      6        D07        4
+         RN2      9        9          1
+         U1       19       D7         3
+         U10      9        Y1         6
+         U16      11       B8         1
+         U2       21       D7         2
+         U3       21       D7         2
+         U4       19       D7         5
+         U9       9        Y1         6
+
+GND      BT1      -        -          5
+         C1       2        2          7
+         C10      2        2          7
+         C11      2        2          7
+         C12      2        2          7
+         C13      2        2          7
+         C14      2        2          7
+         C15      2        2          7
+         C16      2        2          7
+         C17      2        2          7
+         C18      2        2          7
+         C19      -        -          7
+         C2       2        2          2
+         C3       2        2          7
+         C4       2        2          5
+         C5       2        2          7
+         C6       2        2          7
+         C7       2        2          7
+         C8       2        2          7
+         C9       2        2          7
+         CE0      3        GND        1
+         CE0      4        GND        1
+         CE0      62       GND        1
+         CF1      1        GND        * none *
+         CF1      10       A09        4
+         CF1      11       A08        4
+         CF1      12       A07        4
+         CF1      14       A06        4
+         CF1      15       A05        4
+         CF1      16       A04        4
+         CF1      17       A03        4
+         CF1      39       !CSEL      4
+         CF1      50       GND        * none *
+         CF1      8        A10        4
+         CF1      9        !ATASEL    4
+         CF1      P$51     GND        * none *
+         CF1      P$52     GND        * none *
+         D1       K        C          5
+         R10      1        1          3
+         R7       1        1          7
+         R8       1        1          3
+         R9       1        1          3
+         RN1      1        1          3
+         U1       14       GND        * none *
+         U10      10       GND        * none *
+         U11      8        GND        * none *
+         U12      8        GND        * none *
+         U13      1        G          1
+         U13      10       GND        * none *
+         U13      19       G          1
+         U14      1        G          1
+         U14      10       GND        * none *
+         U14      19       G          1
+         U15      1        G          1
+         U15      10       GND        * none *
+         U15      19       G          1
+         U16      10       GND        * none *
+         U2       16       GND        2
+         U3       16       GND        * none *
+         U4       14       GND        * none *
+         U4       20       GND        * none *
+         U5       10       GND        * none *
+         U6       7        GND        * none *
+         U7       7        GND        * none *
+         U8       7        GND        * none *
+         U9       10       GND        * none *
+         Y1       P$1      GND        * none *
+
+ID0      U10      2        A1         6
+
+ID1      U10      17       A4         6
+
+ID2      U10      4        A2         6
+
+ID3      U10      15       A3         6
+
+ID4      U10      6        A3         6
+
+ID5      U10      13       A2         6
+
+ID6      U10      8        A4         6
+
+ID7      U10      11       A1         6
+
+INT_CF   CF1      37       INTRQ      4
+         JP5      1        1          7
+
+N$1      CF1      45       !DASP      4
+         D2       C        C          4
+
+N$2      D2       A        A          4
+         R11      1        1          4
+
+N$3      CF1      42       IORDY      4
+         JP4      2        2          4
+
+N$4      U5       1        G          3
+         U8       2        O          3
+
+N$5      U4       3        X2         5
+         Y1       1        1          5
+
+N$6      U4       2        X1         5
+         Y1       2        2          5
+
+N$7      BT1      +        +          5
+         U4       24       BC         5
+
+N$8      Q1       2        B          5
+         R2       2        2          5
+
+N$9      C2       1        1          2
+         JP7      2        2          2
+         U2       32       VCC        2
+
+N$10     Q1       3        C          5
+         R1       2        2          5
+
+N$11     JP1      2        2          5
+         U4       23       WDI        5
+
+N$12     JP10     2        2          3
+         U1       26       A13        3
+
+N$13     D1       A        A          5
+         R1       1        1          5
+
+N$14     R2       1        1          5
+         U4       4        !WDO       5
+
+N$16     JP8      2        2          3
+         U1       2        A12        3
+
+N$17     JP12     2        2          3
+         U1       1        A14        3
+
+N$18     JP13     2        2          3
+         U5       4        P1         3
+
+N$19     U7       8        O          7
+         U8       9        I          7
+
+N$20     U6       1        I0         1
+         U8       12       O          1
+
+N$21     JP5      2        2          7
+         R7       2        2          7
+         U8       3        I          7
+
+N$22     JP11     2        2          3
+         U5       17       P7         3
+
+N$23     JP9      2        2          3
+         U5       2        P0         3
+
+N$24     C4       1        1          5
+         JP14     2        2          5
+         U4       28       VCC        5
+
+N$25     CF1      46       !PDIAG     4
+         R12      1        1          4
+
+N$27     U7       1        I0         2
+         U8       6        O          2
+
+N$31     JP2      1        1          5
+         U4       6        !RST       5
+
+N$32     U16      19       G          1
+         U6       3        O          1
+
+N$33     CE0      50       D7         1
+         U16      9        A8         1
+
+N$34     CE0      49       D6         1
+         U16      8        A7         1
+
+N$35     CE0      48       D5         1
+         U16      7        A6         1
+
+N$36     CE0      47       D4         1
+         U16      6        A5         1
+
+N$37     CE0      46       D3         1
+         U16      5        A4         1
+
+N$38     CE0      45       D2         1
+         U16      4        A3         1
+
+N$39     CE0      44       D1         1
+         U16      3        A2         1
+
+N$40     CE0      43       D0         1
+         U16      2        A1         1
+
+N$108    JP8      1        1          3
+         R8       2        2          3
+         S2       3        3          3
+
+N$109    JP10     1        1          3
+         R9       2        2          3
+         S2       2        2          3
+
+N$110    JP12     1        1          3
+         R10      2        2          3
+         S2       1        1          3
+
+SW12     JP9      3        3          3
+         RN1      2        2          3
+         S1       8        8          3
+         U5       3        Q0         3
+
+SW13     JP11     3        3          3
+         RN1      3        3          3
+         S1       7        7          3
+         U5       18       Q7         3
+
+SW14     JP13     3        3          3
+         RN1      4        4          3
+         S1       6        6          3
+         U5       5        Q1         3
+
+SW15     RN1      5        5          3
+         S1       5        5          3
+         U5       16       Q6         3
+
+SW16     RN1      6        6          3
+         S1       4        4          3
+         U5       7        Q2         3
+
+SW17     RN1      7        7          3
+         S1       3        3          3
+         U5       14       Q5         3
+
+SW18     RN1      8        8          3
+         S1       2        2          3
+         U5       9        Q3         3
+
+SW19     RN1      9        9          3
+         S1       1        1          3
+         U5       12       Q4         3
+
+VBAT     JP7      3        3          2
+         U4       1        VOUT       5
+
+VCC      C1       1        1          7
+         C10      1        1          7
+         C11      1        1          7
+         C12      1        1          7
+         C13      1        1          7
+         C14      1        1          7
+         C15      1        1          7
+         C16      1        1          7
+         C17      1        1          7
+         C18      1        1          7
+         C19      +        +          7
+         C3       1        1          7
+         C5       1        1          7
+         C6       1        1          7
+         C7       1        1          7
+         C8       1        1          7
+         C9       1        1          7
+         CE0      5        +5V        1
+         CE0      6        +5V        1
+         CF1      13       VCC        * none *
+         CF1      32       !CS1       4
+         CF1      36       !WE        4
+         CF1      38       VCC        * none *
+         CF1      44       !DMACK     4
+         JP14     3        3          5
+         JP7      1        1          2
+         Q1       1        E          5
+         R11      2        2          4
+         R12      2        2          4
+         R3       1        1          3
+         R4       2        2          7
+         R5       1        1          6
+         R6       1        1          6
+         RN2      1        1          1
+         S1       10       10         3
+         S1       11       11         3
+         S1       12       12         3
+         S1       13       13         3
+         S1       14       14         3
+         S1       15       15         3
+         S1       16       16         3
+         S1       9        9          3
+         S2       4        4          3
+         S2       5        5          3
+         S2       6        6          3
+         U1       27       !WE        3
+         U1       28       VCC        * none *
+         U10      20       VCC        * none *
+         U11      16       VCC        * none *
+         U11      6        G1         6
+         U12      16       VCC        * none *
+         U13      2        A1         1
+         U13      20       VCC        * none *
+         U14      20       VCC        * none *
+         U15      20       VCC        * none *
+         U16      20       VCC        * none *
+         U3       32       VCC        * none *
+         U5       20       VCC        * none *
+         U6       10       I1         7
+         U6       12       I0         7
+         U6       13       I1         7
+         U6       14       VCC        * none *
+         U6       4        I0         7
+         U6       5        I1         7
+         U6       9        I0         7
+         U7       14       VCC        * none *
+         U7       9        I0         7
+         U8       11       I          7
+         U8       14       VCC        * none *
+         U9       11       A1         6
+         U9       13       A2         6
+         U9       20       VCC        * none *
+         U9       6        A3         6
+         U9       8        A4         6
+
