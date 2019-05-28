@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10107,18 +10107,6 @@ Source: www.kingbright.com</description>
 <sheet>
 <description>Bus Connector/Buffers</description>
 <plain>
-<wire x1="233.68" y1="185.42" x2="231.14" y2="182.88" width="0.1524" layer="95"/>
-<wire x1="231.14" y1="182.88" x2="218.44" y2="182.88" width="0.1524" layer="95"/>
-<wire x1="218.44" y1="182.88" x2="218.44" y2="187.96" width="0.1524" layer="95"/>
-<wire x1="218.44" y1="187.96" x2="231.14" y2="187.96" width="0.1524" layer="95"/>
-<wire x1="231.14" y1="187.96" x2="233.68" y2="185.42" width="0.1524" layer="95"/>
-<wire x1="40.64" y1="203.2" x2="38.1" y2="200.66" width="0.1524" layer="95"/>
-<wire x1="38.1" y1="200.66" x2="17.78" y2="200.66" width="0.1524" layer="95"/>
-<wire x1="17.78" y1="200.66" x2="17.78" y2="205.74" width="0.1524" layer="95"/>
-<wire x1="17.78" y1="205.74" x2="38.1" y2="205.74" width="0.1524" layer="95"/>
-<wire x1="38.1" y1="205.74" x2="40.64" y2="203.2" width="0.1524" layer="95"/>
-<text x="38.1" y="203.2" size="1.778" layer="95" align="center-right">ADDRESS BUS</text>
-<text x="231.14" y="185.42" size="1.778" layer="95" align="center-right">DATA BUS</text>
 <frame x1="0" y1="0" x2="406.4" y2="254" columns="8" rows="5" layer="94"/>
 <text x="306.07" y="30.48" size="2.54" layer="94" font="vector">Bus Connector/Buffers</text>
 <text x="306.07" y="25.4" size="2.1844" layer="94" font="vector" rot="MR180">Bus connectors and slot-specific connections</text>
@@ -10151,8 +10139,8 @@ Source: www.kingbright.com</description>
 <instances>
 <instance part="P+11" gate="VCC" x="261.62" y="96.52"/>
 <instance part="GND3" gate="1" x="261.62" y="71.12" rot="MR0"/>
-<instance part="U8" gate="F" x="355.6" y="129.54" rot="MR0"/>
-<instance part="U6" gate="A" x="327.66" y="127" rot="MR0"/>
+<instance part="U8" gate="F" x="246.38" y="177.8" rot="MR180"/>
+<instance part="U6" gate="A" x="271.78" y="180.34" rot="MR180"/>
 <instance part="CE0" gate="G$1" x="218.44" y="124.46"/>
 <instance part="U16" gate="A" x="302.26" y="149.86"/>
 <instance part="U13" gate="A" x="86.36" y="185.42" smashed="yes" rot="MR0">
@@ -10186,16 +10174,18 @@ Source: www.kingbright.com</description>
 <busses>
 <bus name="D[0..7]">
 <segment>
-<wire x1="327.66" y1="185.42" x2="233.68" y2="185.42" width="0.762" layer="92"/>
-<wire x1="327.66" y1="185.42" x2="330.2" y2="182.88" width="0.762" layer="92"/>
-<wire x1="330.2" y1="182.88" x2="330.2" y2="147.32" width="0.762" layer="92"/>
+<wire x1="327.66" y1="210.82" x2="30.48" y2="210.82" width="0.762" layer="92"/>
+<wire x1="327.66" y1="210.82" x2="330.2" y2="208.28" width="0.762" layer="92"/>
+<wire x1="330.2" y1="208.28" x2="330.2" y2="147.32" width="0.762" layer="92"/>
+<label x="30.48" y="212.09" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="A[0..19],!RD,!WR,!CSX">
 <segment>
 <wire x1="55.88" y1="200.66" x2="53.34" y2="203.2" width="0.762" layer="92"/>
-<wire x1="53.34" y1="203.2" x2="40.64" y2="203.2" width="0.762" layer="92"/>
+<wire x1="53.34" y1="203.2" x2="30.48" y2="203.2" width="0.762" layer="92"/>
 <wire x1="55.88" y1="200.66" x2="55.88" y2="83.82" width="0.762" layer="92"/>
+<label x="30.48" y="204.47" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -10496,14 +10486,14 @@ Source: www.kingbright.com</description>
 </net>
 <net name="!CINH" class="0">
 <segment>
-<label x="261.62" y="119.38" size="1.016" layer="95" xref="yes"/>
 <wire x1="261.62" y1="119.38" x2="243.84" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="CE0" gate="G$1" pin="!CINH@13"/>
+<label x="270.51" y="119.38" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="F" pin="I"/>
-<wire x1="365.76" y1="129.54" x2="375.92" y2="129.54" width="0.1524" layer="91"/>
-<label x="375.92" y="129.54" size="1.016" layer="95" rot="MR180" xref="yes"/>
+<wire x1="236.22" y1="177.8" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
+<label x="228.6" y="177.8" size="1.016" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="A16" class="0">
@@ -10569,10 +10559,10 @@ Source: www.kingbright.com</description>
 <net name="!CSX" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="I1"/>
-<wire x1="340.36" y1="124.46" x2="345.44" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="124.46" x2="345.44" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="119.38" x2="368.3" y2="119.38" width="0.1524" layer="91"/>
-<label x="368.3" y="119.38" size="1.016" layer="95" rot="MR180" xref="yes"/>
+<wire x1="259.08" y1="182.88" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="182.88" x2="256.54" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="187.96" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
+<label x="228.6" y="187.96" size="1.016" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U13" gate="B" pin="Y4"/>
@@ -10584,29 +10574,29 @@ Source: www.kingbright.com</description>
 <net name="+5VSB" class="0">
 <segment>
 <wire x1="243.84" y1="81.28" x2="266.7" y2="81.28" width="0.1524" layer="91"/>
-<label x="266.7" y="81.28" size="1.016" layer="95" xref="yes"/>
 <pinref part="CE0" gate="G$1" pin="+5VSB@8"/>
+<label x="276.606" y="81.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!RST" class="0">
 <segment>
 <wire x1="193.04" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
-<label x="180.34" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="CE0" gate="G$1" pin="!RST@14"/>
+<label x="172.212" y="99.06" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!IRQX" class="0">
 <segment>
 <wire x1="243.84" y1="129.54" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
-<label x="261.62" y="129.54" size="1.016" layer="95" xref="yes"/>
 <pinref part="CE0" gate="G$1" pin="!IRQX@52"/>
+<label x="270.51" y="129.54" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="I0"/>
 <pinref part="U8" gate="F" pin="O"/>
-<wire x1="345.44" y1="129.54" x2="340.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="177.8" x2="259.08" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!BCSX" class="0">
@@ -10623,8 +10613,8 @@ Source: www.kingbright.com</description>
 <net name="N$32" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="O"/>
-<wire x1="314.96" y1="127" x2="287.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="127" x2="287.02" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="180.34" x2="287.02" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="180.34" x2="287.02" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="137.16" x2="289.56" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U16" gate="A" pin="G"/>
 </segment>
@@ -10930,18 +10920,6 @@ Source: www.kingbright.com</description>
 <sheet>
 <description>RAM</description>
 <plain>
-<wire x1="81.28" y1="81.28" x2="78.74" y2="78.74" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="95"/>
-<wire x1="66.04" y1="78.74" x2="66.04" y2="83.82" width="0.1524" layer="95"/>
-<wire x1="66.04" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="83.82" x2="81.28" y2="81.28" width="0.1524" layer="95"/>
-<wire x1="81.28" y1="167.64" x2="78.74" y2="165.1" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="165.1" x2="58.42" y2="165.1" width="0.1524" layer="95"/>
-<wire x1="58.42" y1="165.1" x2="58.42" y2="170.18" width="0.1524" layer="95"/>
-<wire x1="58.42" y1="170.18" x2="78.74" y2="170.18" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="170.18" x2="81.28" y2="167.64" width="0.1524" layer="95"/>
-<text x="78.74" y="167.64" size="1.778" layer="95" align="center-right">ADDRESS BUS</text>
-<text x="78.74" y="81.28" size="1.778" layer="95" align="center-right">DATA BUS</text>
 <text x="162.56" y="172.72" size="1.9304" layer="97" rot="MR180">RAM ($00000-$7FFFF)</text>
 <text x="287.02" y="172.72" size="1.9304" layer="97" rot="MR180">RAM ($80000-$FFFFF)</text>
 <frame x1="0" y1="0" x2="406.4" y2="254" columns="8" rows="5" layer="94"/>
@@ -10997,6 +10975,7 @@ Source: www.kingbright.com</description>
 <wire x1="205.74" y1="81.28" x2="81.28" y2="81.28" width="0.762" layer="92"/>
 <wire x1="205.74" y1="81.28" x2="208.28" y2="83.82" width="0.762" layer="92"/>
 <wire x1="208.28" y1="83.82" x2="208.28" y2="154.94" width="0.762" layer="92"/>
+<label x="81.28" y="82.55" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="A[0..19],!RD,!WR,!CSX">
@@ -11007,6 +10986,7 @@ Source: www.kingbright.com</description>
 <wire x1="139.7" y1="167.64" x2="81.28" y2="167.64" width="0.762" layer="92"/>
 <wire x1="139.7" y1="167.64" x2="142.24" y2="165.1" width="0.762" layer="92"/>
 <wire x1="142.24" y1="165.1" x2="142.24" y2="106.68" width="0.762" layer="92"/>
+<label x="81.28" y="168.91" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -11573,18 +11553,6 @@ and page selection.</text>
 <wire x1="163.83" y1="27.94" x2="262.89" y2="27.94" width="0" layer="94"/>
 <text x="184.15" y="10.16" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="234.95" y="5.08" size="2.54" layer="94" font="vector" rot="MR0">&gt;LAST_DATE_TIME</text>
-<wire x1="165.1" y1="190.5" x2="162.56" y2="187.96" width="0.1524" layer="95"/>
-<wire x1="162.56" y1="187.96" x2="149.86" y2="187.96" width="0.1524" layer="95"/>
-<wire x1="149.86" y1="187.96" x2="149.86" y2="193.04" width="0.1524" layer="95"/>
-<wire x1="149.86" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="95"/>
-<wire x1="162.56" y1="193.04" x2="165.1" y2="190.5" width="0.1524" layer="95"/>
-<wire x1="165.1" y1="180.34" x2="162.56" y2="177.8" width="0.1524" layer="95"/>
-<wire x1="162.56" y1="177.8" x2="142.24" y2="177.8" width="0.1524" layer="95"/>
-<wire x1="142.24" y1="177.8" x2="142.24" y2="182.88" width="0.1524" layer="95"/>
-<wire x1="142.24" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="95"/>
-<wire x1="162.56" y1="182.88" x2="165.1" y2="180.34" width="0.1524" layer="95"/>
-<text x="162.56" y="180.34" size="1.778" layer="95" align="center-right">ADDRESS BUS</text>
-<text x="162.56" y="190.5" size="1.778" layer="95" align="center-right">DATA BUS</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="208.28" y="134.62"/>
@@ -11638,16 +11606,18 @@ and page selection.</text>
 <busses>
 <bus name="D[0..7]">
 <segment>
-<wire x1="236.22" y1="190.5" x2="165.1" y2="190.5" width="0.762" layer="92"/>
-<wire x1="236.22" y1="190.5" x2="238.76" y2="187.96" width="0.762" layer="92"/>
-<wire x1="238.76" y1="187.96" x2="238.76" y2="142.24" width="0.762" layer="92"/>
+<wire x1="236.22" y1="187.96" x2="139.7" y2="187.96" width="0.762" layer="92"/>
+<wire x1="236.22" y1="187.96" x2="238.76" y2="185.42" width="0.762" layer="92"/>
+<wire x1="238.76" y1="185.42" x2="238.76" y2="142.24" width="0.762" layer="92"/>
+<label x="139.7" y="189.23" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="A[0..19],!RD,!WR,!CSX">
 <segment>
-<wire x1="175.26" y1="180.34" x2="165.1" y2="180.34" width="0.762" layer="92"/>
+<wire x1="175.26" y1="180.34" x2="139.7" y2="180.34" width="0.762" layer="92"/>
 <wire x1="175.26" y1="180.34" x2="177.8" y2="177.8" width="0.762" layer="92"/>
 <wire x1="177.8" y1="177.8" x2="177.8" y2="116.84" width="0.762" layer="92"/>
+<label x="139.7" y="181.61" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -11982,7 +11952,6 @@ and page selection.</text>
 <net name="!U3CS" class="0">
 <segment>
 <wire x1="193.04" y1="101.6" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
-<label x="218.44" y="101.6" size="1.016" layer="95" xref="yes"/>
 <wire x1="193.04" y1="101.6" x2="193.04" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="!CE"/>
 <wire x1="193.04" y1="106.68" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
@@ -11994,6 +11963,7 @@ and page selection.</text>
 <wire x1="142.24" y1="109.22" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
 <junction x="142.24" y="106.68"/>
 <pinref part="U5" gate="A" pin="P=Q"/>
+<label x="227.584" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SW12" class="0">
@@ -12256,18 +12226,6 @@ and page selection.</text>
 <wire x1="163.83" y1="27.94" x2="262.89" y2="27.94" width="0" layer="94"/>
 <text x="184.15" y="10.16" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="234.95" y="5.08" size="2.54" layer="94" font="vector" rot="MR0">&gt;LAST_DATE_TIME</text>
-<wire x1="81.28" y1="154.94" x2="78.74" y2="152.4" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="152.4" x2="66.04" y2="152.4" width="0.1524" layer="95"/>
-<wire x1="66.04" y1="152.4" x2="66.04" y2="157.48" width="0.1524" layer="95"/>
-<wire x1="66.04" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="157.48" x2="81.28" y2="154.94" width="0.1524" layer="95"/>
-<wire x1="81.28" y1="147.32" x2="78.74" y2="144.78" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="95"/>
-<wire x1="58.42" y1="144.78" x2="58.42" y2="149.86" width="0.1524" layer="95"/>
-<wire x1="58.42" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="149.86" x2="81.28" y2="147.32" width="0.1524" layer="95"/>
-<text x="78.74" y="147.32" size="1.778" layer="95" align="center-right">ADDRESS BUS</text>
-<text x="78.74" y="154.94" size="1.778" layer="95" align="center-right">DATA BUS</text>
 </plain>
 <instances>
 <instance part="CF1" gate="G$1" x="137.16" y="106.68"/>
@@ -12298,14 +12256,16 @@ and page selection.</text>
 <segment>
 <wire x1="172.72" y1="154.94" x2="175.26" y2="152.4" width="0.762" layer="92"/>
 <wire x1="175.26" y1="152.4" x2="175.26" y2="124.46" width="0.762" layer="92"/>
-<wire x1="172.72" y1="154.94" x2="81.28" y2="154.94" width="0.762" layer="92"/>
+<wire x1="172.72" y1="154.94" x2="68.58" y2="154.94" width="0.762" layer="92"/>
+<label x="68.58" y="156.21" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="A[0..19],!RD,!WR,!CSX">
 <segment>
 <wire x1="99.06" y1="109.22" x2="99.06" y2="144.78" width="0.762" layer="92"/>
 <wire x1="99.06" y1="144.78" x2="96.52" y2="147.32" width="0.762" layer="92"/>
-<wire x1="96.52" y1="147.32" x2="81.28" y2="147.32" width="0.762" layer="92"/>
+<wire x1="96.52" y1="147.32" x2="68.58" y2="147.32" width="0.762" layer="92"/>
+<label x="68.58" y="148.59" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -12532,7 +12492,7 @@ and page selection.</text>
 <segment>
 <pinref part="CF1" gate="G$1" pin="INTRQ@37"/>
 <wire x1="154.94" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
-<label x="165.1" y="91.44" size="1.016" layer="95" xref="yes"/>
+<label x="175.514" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CF_CD1" class="0">
@@ -12591,18 +12551,6 @@ SRAM battery protection, power-on reset.</text>
 <wire x1="163.83" y1="27.94" x2="262.89" y2="27.94" width="0" layer="94"/>
 <text x="184.15" y="10.16" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="234.95" y="5.08" size="2.54" layer="94" font="vector" rot="MR0">&gt;LAST_DATE_TIME</text>
-<wire x1="144.78" y1="137.16" x2="142.24" y2="134.62" width="0.1524" layer="95"/>
-<wire x1="142.24" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="95"/>
-<wire x1="129.54" y1="134.62" x2="129.54" y2="139.7" width="0.1524" layer="95"/>
-<wire x1="129.54" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="95"/>
-<wire x1="142.24" y1="139.7" x2="144.78" y2="137.16" width="0.1524" layer="95"/>
-<wire x1="73.66" y1="137.16" x2="71.12" y2="134.62" width="0.1524" layer="95"/>
-<wire x1="71.12" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="95"/>
-<wire x1="50.8" y1="134.62" x2="50.8" y2="139.7" width="0.1524" layer="95"/>
-<wire x1="50.8" y1="139.7" x2="71.12" y2="139.7" width="0.1524" layer="95"/>
-<wire x1="71.12" y1="139.7" x2="73.66" y2="137.16" width="0.1524" layer="95"/>
-<text x="71.12" y="137.16" size="1.778" layer="95" align="center-right">ADDRESS BUS</text>
-<text x="142.24" y="137.16" size="1.778" layer="95" align="center-right">DATA BUS</text>
 <text x="55.88" y="71.12" size="2.54" layer="97" rot="MR90">WATCHDOG INDICATOR</text>
 </plain>
 <instances>
@@ -12638,16 +12586,18 @@ SRAM battery protection, power-on reset.</text>
 <busses>
 <bus name="D[0..7]">
 <segment>
-<wire x1="165.1" y1="137.16" x2="144.78" y2="137.16" width="0.762" layer="92"/>
-<wire x1="165.1" y1="137.16" x2="167.64" y2="134.62" width="0.762" layer="92"/>
-<wire x1="167.64" y1="134.62" x2="167.64" y2="109.22" width="0.762" layer="92"/>
+<wire x1="165.1" y1="144.78" x2="50.8" y2="144.78" width="0.762" layer="92"/>
+<wire x1="165.1" y1="144.78" x2="167.64" y2="142.24" width="0.762" layer="92"/>
+<wire x1="167.64" y1="142.24" x2="167.64" y2="109.22" width="0.762" layer="92"/>
+<label x="50.8" y="146.05" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="A[0..19],!RD,!WR,!CSX">
 <segment>
 <wire x1="88.9" y1="134.62" x2="86.36" y2="137.16" width="0.762" layer="92"/>
-<wire x1="86.36" y1="137.16" x2="73.66" y2="137.16" width="0.762" layer="92"/>
+<wire x1="86.36" y1="137.16" x2="50.8" y2="137.16" width="0.762" layer="92"/>
 <wire x1="88.9" y1="134.62" x2="88.9" y2="96.52" width="0.762" layer="92"/>
+<label x="50.8" y="138.43" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -12836,8 +12786,10 @@ SRAM battery protection, power-on reset.</text>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="VOUT"/>
-<wire x1="149.86" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
-<label x="170.18" y="86.36" size="1.016" layer="95" xref="yes"/>
+<wire x1="149.86" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="86.36" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="207.01" y="81.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -12879,35 +12831,35 @@ SRAM battery protection, power-on reset.</text>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="99.06" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
-<label x="170.18" y="99.06" size="1.016" layer="95" xref="yes"/>
+<label x="178.308" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CESB!IN" class="0">
 <segment>
-<label x="101.6" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="104.14" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U4" gate="G$1" pin="!CEIN"/>
-<wire x1="119.38" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CESB!OUT" class="0">
 <segment>
-<wire x1="119.38" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
-<label x="101.6" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="119.38" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+<label x="104.14" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U4" gate="G$1" pin="!CEOUT"/>
 </segment>
 </net>
 <net name="!INT_RTC" class="0">
 <segment>
-<label x="170.18" y="101.6" size="1.016" layer="95" xref="yes"/>
 <pinref part="U4" gate="G$1" pin="!INT"/>
 <wire x1="149.86" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
+<label x="181.61" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS_RTC" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="!CS"/>
-<wire x1="119.38" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<label x="101.6" y="106.68" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="119.38" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
+<label x="104.14" y="106.68" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -12964,18 +12916,6 @@ SRAM battery protection, power-on reset.</text>
 !CS_RTC! = $10-$1F</text>
 <text x="190.5" y="165.1" size="1.778" layer="97">!CS_SR! = $D0
 !CS_ID! = $FF</text>
-<wire x1="172.72" y1="99.06" x2="170.18" y2="96.52" width="0.1524" layer="95"/>
-<wire x1="170.18" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="95"/>
-<wire x1="157.48" y1="96.52" x2="157.48" y2="101.6" width="0.1524" layer="95"/>
-<wire x1="157.48" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="95"/>
-<wire x1="170.18" y1="101.6" x2="172.72" y2="99.06" width="0.1524" layer="95"/>
-<text x="170.18" y="99.06" size="1.778" layer="95" align="center-right">DATA BUS</text>
-<wire x1="93.98" y1="99.06" x2="91.44" y2="96.52" width="0.1524" layer="95"/>
-<wire x1="91.44" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="96.52" x2="78.74" y2="101.6" width="0.1524" layer="95"/>
-<wire x1="78.74" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="95"/>
-<wire x1="91.44" y1="101.6" x2="93.98" y2="99.06" width="0.1524" layer="95"/>
-<text x="91.44" y="99.06" size="1.778" layer="95" align="center-right">DATA BUS</text>
 <text x="71.12" y="30.48" size="1.778" layer="97">0: CF Interrupt Status
 1: RTC Interrupt Status
 2: CF Insertion Status 1
@@ -13013,14 +12953,13 @@ SRAM battery protection, power-on reset.</text>
 <busses>
 <bus name="D[0..7]">
 <segment>
-<wire x1="223.52" y1="99.06" x2="172.72" y2="99.06" width="0.762" layer="92"/>
 <wire x1="223.52" y1="99.06" x2="226.06" y2="96.52" width="0.762" layer="92"/>
 <wire x1="226.06" y1="96.52" x2="226.06" y2="58.42" width="0.762" layer="92"/>
-</segment>
-<segment>
-<wire x1="111.76" y1="99.06" x2="93.98" y2="99.06" width="0.762" layer="92"/>
+<wire x1="111.76" y1="99.06" x2="86.36" y2="99.06" width="0.762" layer="92"/>
 <wire x1="111.76" y1="99.06" x2="114.3" y2="96.52" width="0.762" layer="92"/>
 <wire x1="114.3" y1="96.52" x2="114.3" y2="58.42" width="0.762" layer="92"/>
+<wire x1="223.52" y1="99.06" x2="111.76" y2="99.06" width="0.762" layer="92"/>
+<label x="86.36" y="100.33" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -13132,21 +13071,21 @@ SRAM battery protection, power-on reset.</text>
 <segment>
 <pinref part="U11" gate="A" pin="Y0"/>
 <wire x1="101.6" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
-<label x="114.3" y="157.48" size="1.016" layer="95" xref="yes"/>
+<label x="124.46" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS_RTC" class="0">
 <segment>
 <pinref part="U11" gate="A" pin="Y1"/>
 <wire x1="101.6" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
-<label x="114.3" y="154.94" size="1.016" layer="95" xref="yes"/>
+<label x="125.476" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS_ID" class="0">
 <segment>
 <pinref part="U12" gate="A" pin="Y7"/>
 <wire x1="210.82" y1="139.7" x2="218.44" y2="139.7" width="0.1524" layer="91"/>
-<label x="218.44" y="139.7" size="1.016" layer="95" xref="yes"/>
+<label x="224.536" y="139.7" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U10" gate="B" pin="G"/>
@@ -13163,7 +13102,7 @@ SRAM battery protection, power-on reset.</text>
 <segment>
 <pinref part="U12" gate="A" pin="Y4"/>
 <wire x1="210.82" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
-<label x="218.44" y="147.32" size="1.016" layer="95" xref="yes"/>
+<label x="225.044" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U9" gate="A" pin="G"/>
@@ -13690,7 +13629,7 @@ SRAM battery protection, power-on reset.</text>
 <segment>
 <pinref part="U8" gate="D" pin="O"/>
 <wire x1="180.34" y1="152.4" x2="193.04" y2="152.4" width="0.1524" layer="91"/>
-<label x="193.04" y="152.4" size="1.016" layer="95" xref="yes"/>
+<label x="201.93" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT_CF" class="0">
@@ -13727,24 +13666,21 @@ SRAM battery protection, power-on reset.</text>
 </net>
 <net name="!SR_RTC" class="0">
 <segment>
-<wire x1="106.68" y1="157.48" x2="93.98" y2="157.48" width="0.1524" layer="91"/>
-<label x="106.68" y="157.48" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="152.4" x2="93.98" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="154.94" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
 <junction x="124.46" y="152.4"/>
 <wire x1="132.08" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U7" gate="C" pin="I1"/>
-<wire x1="93.98" y1="157.48" x2="93.98" y2="152.4" width="0.1524" layer="91"/>
-<junction x="93.98" y="152.4"/>
+<wire x1="124.46" y1="152.4" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="137.16" x2="137.16" y2="137.16" width="0.1524" layer="91"/>
+<label x="148.336" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!SR_CF" class="0">
 <segment>
 <wire x1="137.16" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
-<label x="137.16" y="139.7" size="1.016" layer="95" xref="yes"/>
 <pinref part="U7" gate="C" pin="I2"/>
 <wire x1="132.08" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="149.86" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
@@ -13752,6 +13688,7 @@ SRAM battery protection, power-on reset.</text>
 <wire x1="129.54" y1="144.78" x2="116.84" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="139.7" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
 <junction x="129.54" y="144.78"/>
+<label x="147.32" y="139.7" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
