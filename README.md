@@ -1,6 +1,5 @@
 # XMICRO-MEMORY
 
-Memory card for the [XMICRO Bus](https://github.com/X-Microsystems/xmicro-bus), featuring 1MB SRAM, configurable EEPROM,
-CompactFlash interface, and a flexible real-time clock.
+[XMICRO](https://github.com/x-microsystems/xmicro-bus) card providing 1MB of RAM and an optional relocatable 8KB EEPROM.
 
-![XMICRO-VDP](Images/XMICRO-MEMORY.jpg)
+[Datasheet](Documentation/XMICRO-MEMORY.pdf)
